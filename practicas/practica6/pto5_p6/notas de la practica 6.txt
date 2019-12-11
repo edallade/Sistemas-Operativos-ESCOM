@@ -1,0 +1,26 @@
+Practica 6 cOMUNICACION INTERPROCESOS EN LINUX Y WINDOWS
+
+-Revision de la creacion de tuberias en linux y windows 
+.-Revision de las llamadas al sistema para tuberias y memoria en linux y windows 
+.-Desarrollo de aplicaciones concurrentes con requerimiento de comunicacion en ambos S.O.
+
+
+
+==================LLAMADAS A SISTEMA PARA TUBERIAS============================
+
+.- pipe ()  -----> llamada para la creacion de una tuberia en Linux
+
+.- CreatePipe() --> Llamada para crear una tuberia en windows
+
+=================LLAMADAS AL SISTEMA PARA MEMORIA COMPARTIDA============
+
+.-shmget () ----> Llamada para crear o acceder a una region de memoria compartida en Linux.
+
+.-shmat() ------> Llamada ara enlazar la memoria compartida al espacio de memoria de un proceso en Linux.
+
+.-CreateFileMapping () --> LLamada para crear una region de memoria compartida en windows.
+
+.-OpenFileMapping() -----> Lamada para acceder a una region de memoria compartida en windows.
+
+.-MapViewOfFile() -------> Llamada para enlazar la memoria compartida al espacio de memoria de un 
+                           proceso en Windows.

@@ -1,0 +1,46 @@
+
+Notas de practica 5 administracion de proccesos ligeros (Hilos)
+                         en linux y windwos 
+
+
+-Revision de procesos ligeros 
+-Revision de llamadas al sistema y las funciones de biblioteca para hilos en
+ambos sistemas operativos
+
+-Desarrollo de aplicaciones concurrentes utilizando hilos en ambos sistemas 
+
+==Funciones de biblioteca para hilos e Linux==
+
+-pthread_creat() -------> Funcion para crear un hilo
+-pthread_join() --------> Funcion para esperar la terminacion de un Hilo
+-pthread_exit() --------> Funcion para terminar un hilo con la opcion de retornar el
+                           valor del hilo
+
+===Llamadas al sistema para hilos en Windows===
+
+-CreatThread() ---------> Llamada para crear un Hilo
+-WaitForSimpleObjet() --> Llamada para esperar la terminacion de un Hilo
+
+
+========PROTOTIPO DE FNCION PARA CREAR UN HILO=========
+
+==Linux==
+
+void* NOMBRE_DEL_HILO (void*arg);
+
+se le puede pasar un arreglo con los mismos tipos de datos 
+ o si son diferentes se pasa una estructura
+
+se usa void para que el hilo reciba cualquier tipo de dato y 
+regresa cualquier tipo de dato
+
+
+
+==Windows==
+
+DWORD WINAPI NOMBRE_DEL_HILO (LPVOID arg);
+
+devuelve un DWORD,
+
+
+
